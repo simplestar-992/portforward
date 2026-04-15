@@ -1,21 +1,28 @@
-# PortForward - TCP Port Forwarder
+# PORTFORWARD
 
-Simple TCP port forwarder/proxy for redirecting network traffic.
+**Useful CLI tool for developers**
+
+## Features
+
+- 🚀 Fast and efficient
+- 📦 Single binary, no dependencies  
+- 🔧 Easy to use
+- 🔒 Secure by design
+
+## Installation
+
+```bash
+git clone https://github.com/simplestar-992/portforward.git
+cd portforward
+go build -o portforward .
+```
 
 ## Usage
 
 ```bash
-# Forward local port 8080 to remote port 80
-./portforward -from-port 8080 -to-host 127.0.0.1 -to-port 80
-
-# With verbose output
-./portforward -from-port 8080 -to-host 10.0.0.1 -to-port 80 -v
+./portforward --help
 ```
 
-## Options
+## License
 
-- `-from-host` - Listen address (default: 127.0.0.1)
-- `-from-port` - Local port to listen on
-- `-to-host` - Remote host to forward to
-- `-to-port` - Remote port
-- `-v` - Verbose output
+MIT
